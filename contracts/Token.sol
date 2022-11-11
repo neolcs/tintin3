@@ -14,10 +14,17 @@ contract Token {
     mapping (address => uint256) balances;
 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
+    event OwnerChanged(address indexed _from, address indexed _to);
 
     constructor() {
         balances[msg.sender] = totalSupply;
         owner = msg.sender;
+    }
+
+    function transferOwner(address to) external {
+        require(owner == msg.sender, "Only owner granted");
+        emit OwnerChanged(owner, msg.sender);
+        owner = to;
     }
 
     function  transfer(address to, uint256 amount)  external {

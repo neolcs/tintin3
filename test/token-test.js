@@ -30,5 +30,12 @@ describe("token test", () => {
     const largeAmount = 1000;
     await hardhatToken.transfer(receiver.address, amount);
     await expect(hardhatToken.connect(receiver).transfer(third.address, largeAmount)).to.be.revertedWith('Not enough tokens');
-  })
+  });
+
+  it("owner changed should only be call by prevous owner", async function() {
+    expect(hardhatToken.connect(receiver).transferOwner(third.address)).to.be.revertedWith('Only owner granted');
+  });
+  it("owner change would emit event", async function() {
+    expect(hardhatToken.transferOwner(receiver.address)).to.be.emit(hardhatToken, 'OwnerChanged').withArgs(owner.address, receiver.address);
+  });
 })

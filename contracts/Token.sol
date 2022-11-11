@@ -5,7 +5,7 @@ pragma solidity ^0.8.9;
 // import "hardhat/console.sol";
 
 contract Token {
-    string public name = "Rocket Token";
+    string public name = "Rocket Token Simple";
     string public symbol = "RT";
 
     uint256 public totalSupply = 10000000;

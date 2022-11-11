@@ -5,8 +5,8 @@ pragma solidity ^0.8.9;
 // import "hardhat/console.sol";
 
 contract Token {
-    string public name = "My Hardhat Token";
-    string public symbol = "MHT";
+    string public name = "Rocket Token";
+    string public symbol = "RT";
 
     uint256 public totalSupply = 10000000;
     address public owner;

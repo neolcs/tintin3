@@ -1,0 +1,46 @@
+Arguments: 
+  /Users/Chuan/.nvm/versions/node/v14.18.2/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js
+
+PATH: 
+  /Applications/Sublime Text.app/Contents/SharedSupport/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/Users/Chuan/.cargo/bin:/Users/Chuan/.nvm/versions/node/v14.18.2/bin:/Users/Chuan/edge/depot_tools:/Users/Chuan/edge/depot_tools/scripts:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/Chuan/Documents/flutter/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  14.18.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@nomicfoundation%2fhardhat-toolbox: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:141124:19)
+      at listOnTimeout (internal/timers.js:557:17)
+      at processTimers (internal/timers.js:500:7)
+
+npm manifest: 
+  {
+    "name": "hardhat",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+      "dotenv": "^16.0.3",
+      "env": "^0.0.2",
+      "hardhat": "^2.12.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

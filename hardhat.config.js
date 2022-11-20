@@ -13,7 +13,7 @@ task("accounts", "Print the list of accounts", async () => {
   accounts.map(acc => console.log(acc.address));
 })
 module.exports = {
-  solidity: "0.8.17",
+  solidity: "0.8.9",
   networks: {
     goerli: {
       url: `https://eth-goerli.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
